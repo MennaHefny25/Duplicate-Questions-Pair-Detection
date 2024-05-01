@@ -1,4 +1,4 @@
-### Note: python version use is 3.10.12 tensorflow is 2.15.0 
+### Note: python version used is 3.10.12 tensorflow is 2.15.0 
 
 ### Download vocab and model from drive link 
 
