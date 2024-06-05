@@ -6,8 +6,8 @@ import keras.backend as K
 def exponent_neg_manhattan_distance(left, right):
     return K.exp(-K.sum(K.abs(left-right), axis=1, keepdims=True))
 
-vocabulary = get_vocab('./vocabulary_train.p')
-malstm_model = get_model('./malstm_trained.h5')
+vocabulary = get_vocab('vocabulary_train.p')
+malstm_model = get_model('malstm_trained.h5')
 max_seq_length = 212
 
 def main():
