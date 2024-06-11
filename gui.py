@@ -2,6 +2,16 @@ import streamlit as st
 from predictor import make_predictions, get_model, get_vocab
 import keras.backend as K
 
+import nltk
+
+# Ensure the stopwords resource is downloaded
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
+
+# Rest of your code
+
 
 def exponent_neg_manhattan_distance(left, right):
     return K.exp(-K.sum(K.abs(left-right), axis=1, keepdims=True))
